@@ -20,7 +20,7 @@ const Header = () => {
     <div className="header">
       <div className="header__container">
         <img className="header__logo" src={logo} alt="logo pic" />
-        <h1 className="header__title">bornxbred</h1>
+        <h1 className="header__title">BORNxBRED</h1>
 
         {/* Menu Icon */}
         <FontAwesomeIcon
@@ -48,17 +48,17 @@ const Header = () => {
             <nav className="header__nav">
               <ul className="nav__list">
                 <li className="nav__item">
-                  <a className="nav__link" href="#home">
+                  <a className="nav__link" href="#home" onClick={toggleMenu}>
                     Home
                   </a>
                 </li>
                 <li className="nav__item">
-                  <a className="nav__link" href="#shop">
+                  <a className="nav__link" href="#shop" onClick={toggleMenu}>
                     Shop
                   </a>
                 </li>
                 <li className="nav__item">
-                  <a className="nav__link" href="#contact">
+                  <a className="nav__link" href="#contact" onClick={toggleMenu}>
                     Contact
                   </a>
                 </li>

@@ -1,0 +1,7 @@
+@use "../../styles/partials/mixins" as *;
+
+.footer {
+  &__container {
+    width: 100%;
+  }
+}
