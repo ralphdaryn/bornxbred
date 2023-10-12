@@ -6,13 +6,14 @@ import {
   faShoppingCart,
   faUser,
   faBars,
+  faTimes,
 } from "@fortawesome/free-solid-svg-icons";
 
 const Header = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
 
   const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
+    setMenuOpen(!menuOpen);
   };
 
   return (
@@ -34,17 +35,36 @@ const Header = () => {
           <FontAwesomeIcon className="header__user" icon={faUser} />
         </div>
 
-        {isMenuOpen && (
-          <nav className="header__nav">
-            <ul>
-              <li className="header__navlink">
-                <a href="#home">Home</a>
-              </li>
-              <li className="header__navlink">
-                <a href="#contact">Contact</a>
-              </li>
-            </ul>
-          </nav>
+        {menuOpen && (
+          <div className="header__overlay">
+            {/* Close Button */}
+            <FontAwesomeIcon
+              className="header__close"
+              icon={faTimes}
+              onClick={toggleMenu}
+            />
+
+            {/* Navigation Menu */}
+            <nav className="header__nav">
+              <ul className="nav__list">
+                <li className="nav__item">
+                  <a className="nav__link" href="#home">
+                    Home
+                  </a>
+                </li>
+                <li className="nav__item">
+                  <a className="nav__link" href="#shop">
+                    Shop
+                  </a>
+                </li>
+                <li className="nav__item">
+                  <a className="nav__link" href="#contact">
+                    Contact
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
         )}
       </div>
     </div>
