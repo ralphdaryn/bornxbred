@@ -2,27 +2,41 @@
 
 .header {
   &__container {
+    width: 100%;
     background-color: black;
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
   &__title {
     color: white;
-    font-size: 3rem;
+    font-size: 2rem;
   }
   &__logo {
     width: 5rem;
   }
+  &__icon {
+    display: none;
+  }
   &__searchbar {
     color: white;
-    height: 3.5rem;
+    height: 2rem;
   }
   &__cart {
     color: white;
-    height: 3.5rem;
+    height: 2rem;
   }
   &__user {
     color: white;
-    height: 3.5rem;
+    height: 2rem;
+  }
+  &__bars {
+    color: white;
+    height: 2rem;
+    cursor: pointer;
+    margin: 1rem;
+  }
+  &__nav {
+    color: white;
   }
 }
