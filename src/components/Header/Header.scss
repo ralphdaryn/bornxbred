@@ -1,0 +1,28 @@
+@use "../../styles/partials/mixins" as *;
+
+.header {
+  &__container {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__title {
+    color: white;
+    font-size: 3rem;
+  }
+  &__logo {
+    width: 5rem;
+  }
+  &__searchbar {
+    color: white;
+    height: 3.5rem;
+  }
+  &__cart {
+    color: white;
+    height: 3.5rem;
+  }
+  &__user {
+    color: white;
+    height: 3.5rem;
+  }
+}
