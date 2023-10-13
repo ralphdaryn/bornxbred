@@ -3,9 +3,40 @@ import "./Hero.scss";
 import heroImage from "../../assets/images/blacksweater.png";
 import heroImageTwo from "../../assets/images/whitesweater.png";
 import heroImageThree from "../../assets/images/crewneck.png";
+import heroImageFour from "../../assets/images/beige.png";
+import heroImageFive from "../../assets/images/black.png";
+import heroImageSix from "../../assets/images/red.png";
+import heroImageSeven from "../../assets/images/bornbredbeige.png";
+import heroImageEight from "../../assets/images/scarbblack.png";
+import heroImageNine from "../../assets/images/scarbgreen.png";
+import heroImageTen from "../../assets/images/scarbwhite.png";
+import heroImageEleven from "../../assets/images/torontoblack.png";
+import heroImageTwelve from "../../assets/images/torontogreen.png";
+import heroImageThirteen from "../../assets/images/torontored.png";
+import heroImageFourteen from "../../assets/images/beigetoronto.png";
+import heroImageFifteen from "../../assets/images/sbeige.png";
 
 const Hero = () => {
-  const images = useMemo(() => [heroImage, heroImageTwo, heroImageThree], []);
+  const images = useMemo(
+    () => [
+      heroImage,
+      heroImageTwo,
+      heroImageThree,
+      heroImageFour,
+      heroImageFive,
+      heroImageSix,
+      heroImageSeven,
+      heroImageEight,
+      heroImageNine,
+      heroImageTen,
+      heroImageEleven,
+      heroImageTwelve,
+      heroImageThirteen,
+      heroImageFourteen,
+      heroImageFifteen,
+    ],
+    []
+  );
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   useEffect(() => {
