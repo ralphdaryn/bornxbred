@@ -1,0 +1,22 @@
+@use "./mixins" as *;
+@use "./colors" as *;
+@use "./fonts" as *;
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Futura", "Helevica", sans-serif;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: unset;
+}
