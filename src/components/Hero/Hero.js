@@ -50,7 +50,7 @@ const Hero = () => {
   return (
     <div className="hero">
       <div className="hero__container">
-        <div>
+        <div className="hero__wrapper">
           <h2 className="hero__title">Born in Toronto</h2>
           <h2 className="hero__title">Bred in Scarborough</h2>
         </div>
